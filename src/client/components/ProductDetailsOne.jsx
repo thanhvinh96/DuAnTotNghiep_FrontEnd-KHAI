@@ -1,18 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom';
 import Slider from 'react-slick';
-import { getCountdown } from '../helper/Countdown';
 
 const ProductDetailsOne = () => {
-    const [timeLeft, setTimeLeft] = useState(getCountdown());
-
-    useEffect(() => {
-        const interval = setInterval(() => {
-            setTimeLeft(getCountdown());
-        }, 1000);
-
-        return () => clearInterval(interval);
-    }, []);
     const productImages = [
         "assets/images/thumbs/product-details-thumb1.png",
         "assets/images/thumbs/product-details-thumb2.png",
@@ -37,7 +27,7 @@ const ProductDetailsOne = () => {
         focusOnSelect: true,
     };
     return (
-        <section className="product-details py-80">
+        <section className="product-details py-80" style={{marginTop:'-70px'}}>
             <div className="container container-lg">
                 <div className="row gy-4">
                     <div className="col-lg-9">
@@ -102,71 +92,13 @@ const ProductDetailsOne = () => {
                                             <span className="text-gray-400">SKU:</span>EB4DRP{" "}
                                         </span>
                                     </div>
-                                    <span className="mt-32 pt-32 text-gray-700 border-top border-gray-100 d-block" />
-                                    <p className="text-gray-700">
-                                        Vivamus adipiscing nisl ut dolor dignissim semper. Nulla luctus
-                                        malesuada tincidunt. Class aptent taciti sociosqu ad litora
-                                        torquent
-                                    </p>
+                                    <span className=" pt-32 text-gray-700 border-top border-gray-100 d-block" />
                                     <div className="mt-32 flex-align flex-wrap gap-32">
                                         <div className="flex-align gap-8">
                                             <h4 className="mb-0">$25.00</h4>
-                                            <span className="text-md text-gray-500">$38.00</span>
                                         </div>
-                                        <Link to="#" className="btn btn-main rounded-pill">
-                                            Order on What'sApp
-                                        </Link>
                                     </div>
-                                    <span className="mt-32 pt-32 text-gray-700 border-top border-gray-100 d-block" />
                                     <div className="flex-align flex-wrap gap-16 bg-color-one rounded-8 py-16 px-24">
-                                        <div className="flex-align gap-16">
-                                            <span className="text-main-600 text-sm">Special Offer:</span>
-                                        </div>
-                                        <div className="countdown" id="countdown11">
-                                            <ul className="countdown-list flex-align flex-wrap">
-                                                <li className="countdown-list__item text-heading flex-align gap-4 text-xs fw-medium w-28 h-28 rounded-4 border border-main-600 p-0 flex-center">
-                                                    {timeLeft.days} <span className="days" />
-                                                </li>
-                                                <li className="countdown-list__item text-heading flex-align gap-4 text-xs fw-medium w-28 h-28 rounded-4 border border-main-600 p-0 flex-center">
-                                                    {timeLeft.hours}<span className="hours" />
-                                                </li>
-                                                <li className="countdown-list__item text-heading flex-align gap-4 text-xs fw-medium w-28 h-28 rounded-4 border border-main-600 p-0 flex-center">
-                                                    {timeLeft.minutes}<span className="minutes" />
-                                                </li>
-                                                <li className="countdown-list__item text-heading flex-align gap-4 text-xs fw-medium w-28 h-28 rounded-4 border border-main-600 p-0 flex-center">
-                                                    {timeLeft.seconds}<span className="seconds" />
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <span className="text-gray-900 text-xs">
-                                            Remains untill the end of the offer
-                                        </span>
-                                    </div>
-                                    <div className="mb-24">
-                                        <div className="mt-32 flex-align gap-12 mb-16">
-                                            <span className="w-32 h-32 bg-white flex-center rounded-circle text-main-600 box-shadow-xl">
-                                                <i className="ph-fill ph-lightning" />
-                                            </span>
-                                            <h6 className="text-md mb-0 fw-bold text-gray-900">
-                                                Products are almost sold out
-                                            </h6>
-                                        </div>
-                                        <div
-                                            className="progress w-100 bg-gray-100 rounded-pill h-8"
-                                            role="progressbar"
-                                            aria-label="Basic example"
-                                            aria-valuenow={32}
-                                            aria-valuemin={0}
-                                            aria-valuemax={100}
-                                        >
-                                            <div
-                                                className="progress-bar bg-main-two-600 rounded-pill"
-                                                style={{ width: "32%" }}
-                                            />
-                                        </div>
-                                        <span className="text-sm text-gray-700 mt-8">
-                                            Available only:45
-                                        </span>
                                     </div>
                                     <span className="text-gray-900 d-block mb-8">Quantity:</span>
                                     <div className="flex-between gap-16 flex-wrap">
@@ -339,7 +271,7 @@ const ProductDetailsOne = () => {
                         </div>
                     </div>
                 </div>
-                <div className="pt-80">
+                {/* <div className="pt-80">
                     <div className="product-dContent border rounded-24">
                         <div className="product-dContent__header border-bottom border-gray-100 flex-between flex-wrap gap-16">
                             <ul
@@ -987,7 +919,7 @@ const ProductDetailsOne = () => {
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> */}
             </div>
         </section>
 

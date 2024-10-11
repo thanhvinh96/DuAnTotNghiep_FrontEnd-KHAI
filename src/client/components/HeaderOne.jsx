@@ -92,7 +92,7 @@ const HeaderOne = () => {
                 </button>
                 <div className="mobile-menu__inner">
                     <Link to="/" className="mobile-menu__logo">
-                        <img src="assets/images/logo/logo.png" alt="Logo" />
+                        <img src="assets/images/logo/F.png" alt="Logo" />
                     </Link>
                     <div className="mobile-menu__menu">
                         {/* Nav Menu Start */}
@@ -291,46 +291,9 @@ const HeaderOne = () => {
                     </div>
                 </div>
             </div>
-            {/* ==================== Mobile Menu End Here ==================== */}
-            {/* ======================= Middle Top Start ========================= */}
             <div className="header-top bg-main-600 flex-between">
                 <div className="container container-lg">
-                    <div className="flex-between flex-wrap gap-8">
-                        <ul className="flex-align flex-wrap d-none d-md-flex">
-                            <li className="border-right-item">
-                                <Link
-                                    to="#"
-                                    className="text-white text-sm hover-text-decoration-underline"
-                                >
-                                    Become A Seller
-                                </Link>
-                            </li>
-                            <li className="border-right-item">
-                                <Link
-                                    to="#"
-                                    className="text-white text-sm hover-text-decoration-underline"
-                                >
-                                    About us
-                                </Link>
-                            </li>
-                            <li className="border-right-item">
-                                <Link
-                                    to="#"
-                                    className="text-white text-sm hover-text-decoration-underline"
-                                >
-                                    Free Delivery
-                                </Link>
-                            </li>
-                            <li className="border-right-item">
-                                <Link
-                                    to="#"
-                                    className="text-white text-sm hover-text-decoration-underline"
-                                >
-                                    Returns Policy
-                                </Link>
-                            </li>
-                        </ul>
-                        <ul className="header-top__right flex-align flex-wrap">
+                        <ul className="header-top__right flex-align flex-wrap float-end">
                             <li className="on-hover-item border-right-item border-right-item-sm-space has-submenu arrow-white">
                                 <Link to="#" className="text-white text-sm py-8">
                                     Help Center
@@ -361,7 +324,6 @@ const HeaderOne = () => {
                                 </ul>
                             </li>
                             <li className="on-hover-item border-right-item border-right-item-sm-space has-submenu arrow-white">
-                                {/* Display the selected language here */}
                                 <Link to="#" className="selected-text text-white text-sm py-8">
                                     {selectedLanguage}
                                 </Link>
@@ -453,7 +415,6 @@ const HeaderOne = () => {
                                 </ul>
                             </li>
                             <li className="on-hover-item border-right-item border-right-item-sm-space has-submenu arrow-white">
-                                {/* Display the selected currency */}
                                 <Link to="#" className="selected-text text-white text-sm py-8">
                                     {selectedCurrency}
                                 </Link>
@@ -559,42 +520,22 @@ const HeaderOne = () => {
                                 </Link>
                             </li>
                         </ul>
-                    </div>
                 </div>
             </div>
-            {/* ======================= Middle Top End ========================= */}
-            {/* ======================= Middle Header Start ========================= */}
-            <header className="header-middle bg-color-one border-bottom border-gray-100">
+            <header className="  border-bottom">
                 <div className="container container-lg">
-                    <nav className="header-inner flex-between">
+                    <nav className="header-inner d-flex flex-align justify-content-between">
                         {/* Logo Start */}
-                        <div className="logo">
+                        <div className="logo" style={{width:''}}>
                             <Link to="/" className="link">
-                                <img src="assets/images/logo/logo.png" alt="Logo" />
+                                <img src="assets/images/logo/F.png" alt="Logo" style={{width:'140px',height:'60px'}}  />
                             </Link>
                         </div>
                         {/* Logo End  */}
                         {/* form location Start */}
                         <form action="#" className="flex-align flex-wrap form-location-wrapper">
                             <div className="search-category d-flex h-48 select-border-end-0 radius-end-0 search-form d-sm-flex d-none">
-                                <select defaultValue={1}
-                                    className="js-example-basic-single border border-gray-200 border-end-0"
-                                    name="state"
-                                >
-                                    <option value={1} >
-                                        All Categories
-                                    </option>
-                                    <option value={1}>Grocery</option>
-                                    <option value={1}>Breakfast &amp; Dairy</option>
-                                    <option value={1}>Vegetables</option>
-                                    <option value={1}>Milks and Dairies</option>
-                                    <option value={1}>Pet Foods &amp; Toy</option>
-                                    <option value={1}>Breads &amp; Bakery</option>
-                                    <option value={1}>Fresh Seafood</option>
-                                    <option value={1}>Fronzen Foods</option>
-                                    <option value={1}>Noodles &amp; Rice</option>
-                                    <option value={1}>Ice Cream</option>
-                                </select>
+                                        
                                 <div className="search-form__wrapper position-relative">
                                     <input
                                         type="text"
@@ -609,7 +550,7 @@ const HeaderOne = () => {
                                     </button>
                                 </div>
                             </div>
-                            <div className="location-box bg-white flex-align gap-8 py-6 px-16 rounded-pill border border-gray-100">
+                            {/* <div className="location-box bg-white flex-align gap-8 py-6 px-16 rounded-pill border border-gray-100">
                                 <span className="text-gray-900 text-xl d-xs-flex d-none">
                                     <i className="ph ph-map-pin" />
                                 </span>
@@ -636,9 +577,8 @@ const HeaderOne = () => {
                                         </select>
                                     </div>
                                 </div>
-                            </div>
+                            </div> */}
                         </form>
-                        {/* form location start */}
                         {/* Header Middle Right start */}
                         <div className="header-right flex-align d-lg-block d-none">
                             <div className="flex-align flex-wrap gap-12">
@@ -674,12 +614,9 @@ const HeaderOne = () => {
                                 </Link>
                             </div>
                         </div>
-                        {/* Header Middle Right End  */}
                     </nav>
                 </div>
             </header>
-            {/* ======================= Middle Header End ========================= */}
-            {/* ==================== Header Start Here ==================== */}
             <header className={`header bg-white border-bottom border-gray-100 ${scroll && "fixed-header"}`}>
                 <div className="container container-lg">
                     <nav className="header-inner d-flex justify-content-between gap-8">
@@ -711,7 +648,7 @@ const HeaderOne = () => {
                                     {/* Logo Start */}
                                     <div className="logo px-16 d-lg-none d-block">
                                         <Link to="/" className="link">
-                                            <img src="assets/images/logo/logo.png" alt="Logo" />
+                                            <img src="assets/images/logo/F.png" alt="Logo" />
                                         </Link>
                                     </div>
                                     {/* Logo End */}
@@ -994,79 +931,20 @@ const HeaderOne = () => {
                             <div className="header-menu d-lg-block d-none">
                                 {/* Nav Menu Start */}
                                 <ul className="nav-menu flex-align ">
-                                    <li className="on-hover-item nav-menu__item has-submenu">
-                                        <Link to="#" className="nav-menu__link">
+                                    <li className="">
+                                        <Link to="/" className="nav-menu__link">
                                             Home
                                         </Link>
-                                        <ul className="on-hover-dropdown common-dropdown nav-submenu scroll-sm">
-                                            <li className="common-dropdown__item nav-submenu__item">
-                                                <NavLink
-                                                    to="/"
-                                                    // className={`common-dropdown__link nav-submenu__link hover-bg-neutral-100 `}
-                                                    className={(navData) =>
-                                                        navData.isActive ? "common-dropdown__link nav-submenu__link hover-bg-neutral-100 activePage" : "common-dropdown__link nav-submenu__link hover-bg-neutral-100"
-                                                    }
-                                                >
-                                                    Home One
-                                                </NavLink>
-                                            </li>
-                                            <li className="common-dropdown__item nav-submenu__item">
-                                                <NavLink
-                                                    to="/index-two"
-                                                    className={(navData) =>
-                                                        navData.isActive ? "common-dropdown__link nav-submenu__link hover-bg-neutral-100 activePage" : "common-dropdown__link nav-submenu__link hover-bg-neutral-100"
-                                                    }
-                                                >
-                                                    {" "}
-                                                    Home Two
-                                                </NavLink>
-                                            </li>
-                                        </ul>
                                     </li>
-                                    <li className="on-hover-item nav-menu__item has-submenu">
-                                        <Link to="#" className="nav-menu__link">
+                                    <li>
+                                        <Link to="/shop" className="nav-menu__link">
                                             Shop
                                         </Link>
-                                        <ul className="on-hover-dropdown common-dropdown nav-submenu scroll-sm">
-                                            <li className="common-dropdown__item nav-submenu__item">
-                                                <NavLink
-                                                    to="/shop"
-                                                    className={(navData) =>
-                                                        navData.isActive ? "common-dropdown__link nav-submenu__link hover-bg-neutral-100 activePage" : "common-dropdown__link nav-submenu__link hover-bg-neutral-100"
-                                                    }
-                                                >
-                                                    {" "}
-                                                    Shop
-                                                </NavLink>
-                                            </li>
-                                            <li className="common-dropdown__item nav-submenu__item">
-                                                <NavLink
-                                                    to="/product-details"
-                                                    className={(navData) =>
-                                                        navData.isActive ? "common-dropdown__link nav-submenu__link hover-bg-neutral-100 activePage" : "common-dropdown__link nav-submenu__link hover-bg-neutral-100"
-                                                    }
-                                                >
-                                                    {" "}
-                                                    Shop Details
-                                                </NavLink>
-                                            </li>
-                                            <li className="common-dropdown__item nav-submenu__item">
-                                                <NavLink
-                                                    to="/product-details-two"
-                                                    className={(navData) =>
-                                                        navData.isActive ? "common-dropdown__link nav-submenu__link hover-bg-neutral-100 activePage" : "common-dropdown__link nav-submenu__link hover-bg-neutral-100"
-                                                    }
-                                                >
-                                                    {" "}
-                                                    Shop Details Two
-                                                </NavLink>
-                                            </li>
-                                        </ul>
                                     </li>
                                     <li className="on-hover-item nav-menu__item has-submenu">
-                                        <span className="badge-notification bg-warning-600 text-white text-sm py-2 px-8 rounded-4">
+                                        {/* <span className="badge-notification bg-warning-600 text-white text-sm py-2 px-8 rounded-4">
                                             New
-                                        </span>
+                                        </span> */}
                                         <Link to="#" className="nav-menu__link">
                                             Pages
                                         </Link>
@@ -1143,11 +1021,8 @@ const HeaderOne = () => {
                                         </NavLink>
                                     </li>
                                 </ul>
-                                {/* Nav Menu End */}
                             </div>
-                            {/* Menu End  */}
                         </div>
-                        {/* Header Right start */}
                         <div className="header-right flex-align">
                             <Link
                                 to="/tel:01234567890"
@@ -1156,7 +1031,7 @@ const HeaderOne = () => {
                                 <div className="d-flex text-32">
                                     <i className="ph ph-phone-call" />
                                 </div>
-                                01- 234 567 890
+                                0898389790
                             </Link>
                             <div className="me-16 d-lg-none d-block">
                                 <div className="flex-align flex-wrap gap-12">
@@ -1171,9 +1046,9 @@ const HeaderOne = () => {
                                     <Link to="/cart" className="flex-align gap-4 item-hover">
                                         <span className="text-2xl text-gray-700 d-flex position-relative me-6 mt-6 item-hover__text">
                                             <i className="ph ph-heart" />
-                                            <span className="w-16 h-16 flex-center rounded-circle bg-main-600 text-white text-xs position-absolute top-n6 end-n4">
+                                            {/* <span className="w-16 h-16 flex-center rounded-circle bg-main-600 text-white text-xs position-absolute top-n6 end-n4">
                                                 2
-                                            </span>
+                                            </span> */}
                                         </span>
                                         <span className="text-md text-gray-500 item-hover__text d-none d-lg-flex">
                                             Wishlist

@@ -100,26 +100,6 @@ const FlashSalesOne = () => {
                                         </div>
                                         <div className="flash-sales-item__content ms-sm-auto">
                                             <h6 className="text-32 mb-20">{item.ProductName}</h6>
-                                            <div className="countdown" id="countdown2">
-                                                <ul className="countdown-list flex-align flex-wrap">
-                                                    <li className="countdown-list__item text-heading flex-align gap-4 text-sm fw-medium">
-                                                        <span className="days" />
-                                                        {timeLeft.days}  Days
-                                                    </li>
-                                                    <li className="countdown-list__item text-heading flex-align gap-4 text-sm fw-medium">
-                                                        <span className="hours" />
-                                                        {timeLeft.hours}  Hours
-                                                    </li>
-                                                    <li className="countdown-list__item text-heading flex-align gap-4 text-sm fw-medium">
-                                                        <span className="minutes" />
-                                                        {timeLeft.minutes}  Min
-                                                    </li>
-                                                    <li className="countdown-list__item text-heading flex-align gap-4 text-sm fw-medium">
-                                                        <span className="seconds" />
-                                                        {timeLeft.seconds}  Sec
-                                                    </li>
-                                                </ul>
-                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -136,26 +116,6 @@ const FlashSalesOne = () => {
                                     </div>
                                     <div className="flash-sales-item__content ms-sm-auto">
                                         <h6 className="text-32 mb-20">vinh</h6>
-                                        <div className="countdown" id="countdown2">
-                                            <ul className="countdown-list flex-align flex-wrap">
-                                                <li className="countdown-list__item text-heading flex-align gap-4 text-sm fw-medium">
-                                                    <span className="days" />
-                                                    {timeLeft.days}  Days
-                                                </li>
-                                                <li className="countdown-list__item text-heading flex-align gap-4 text-sm fw-medium">
-                                                    <span className="hours" />
-                                                    {timeLeft.hours}  Hours
-                                                </li>
-                                                <li className="countdown-list__item text-heading flex-align gap-4 text-sm fw-medium">
-                                                    <span className="minutes" />
-                                                    {timeLeft.minutes}  Min
-                                                </li>
-                                                <li className="countdown-list__item text-heading flex-align gap-4 text-sm fw-medium">
-                                                    <span className="seconds" />
-                                                    {timeLeft.seconds}  Sec
-                                                </li>
-                                            </ul>
-                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -171,26 +131,6 @@ const FlashSalesOne = () => {
                                     </div>
                                     <div className="flash-sales-item__content ms-sm-auto">
                                         <h6 className="text-32 mb-20">vinh</h6>
-                                        <div className="countdown" id="countdown2">
-                                            <ul className="countdown-list flex-align flex-wrap">
-                                                <li className="countdown-list__item text-heading flex-align gap-4 text-sm fw-medium">
-                                                    <span className="days" />
-                                                    {timeLeft.days}  Days
-                                                </li>
-                                                <li className="countdown-list__item text-heading flex-align gap-4 text-sm fw-medium">
-                                                    <span className="hours" />
-                                                    {timeLeft.hours}  Hours
-                                                </li>
-                                                <li className="countdown-list__item text-heading flex-align gap-4 text-sm fw-medium">
-                                                    <span className="minutes" />
-                                                    {timeLeft.minutes}  Min
-                                                </li>
-                                                <li className="countdown-list__item text-heading flex-align gap-4 text-sm fw-medium">
-                                                    <span className="seconds" />
-                                                    {timeLeft.seconds}  Sec
-                                                </li>
-                                            </ul>
-                                        </div>
                                     </div>
                                 </div>
                             </div>

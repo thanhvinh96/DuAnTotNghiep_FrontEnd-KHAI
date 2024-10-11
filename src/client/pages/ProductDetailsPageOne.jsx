@@ -37,7 +37,7 @@ const ProductDetailsPageOne = () => {
       <ProductDetailsOne />
 
       {/* NewArrivalTwo */}
-      <NewArrivalTwo />
+      {/* <NewArrivalTwo /> */}
 
       {/* ShippingOne */}
       <ShippingOne />
