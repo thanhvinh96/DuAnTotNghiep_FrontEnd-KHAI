@@ -11,32 +11,12 @@ const DeliveryOne = () => {
                         alt=""
                         className="position-absolute inset-block-start-0 inset-inline-start-0 z-n1 w-100 h-100"
                     />
-                    <div className="row align-items-center">
-                        <div className="col-md-3 d-md-block d-none">
-                            <div className="delivery__man text-center">
-                                <img src="assets/images/thumbs/delivery-man.png" alt="" />
-                            </div>
-                        </div>
-                        <div className="col-md-5 col-sm-7">
-                            <div className="text-center">
-                                <h4 className="text-white mb-8">
-                                    We Delivery on Next Day from 10:00 AM to 08:00 PM
-                                </h4>
-                                <p className="text-white">For Orders starts from $100</p>
-                                <Link
-                                    to="/shop"
-                                    className="mt-16 btn btn-main-two fw-medium d-inline-flex align-items-center rounded-pill gap-8"
-                                    tabIndex={0}
-                                >
-                                    Shop Now
-                                    <span className="icon text-xl d-flex">
-                                        <i className="ph ph-arrow-right" />
-                                    </span>
-                                </Link>
-                            </div>
-                        </div>
-                        <div className="col-md-4 col-sm-5 d-sm-block d-none">
-                            <img src="assets/images/thumbs/special-snacks-img.png" alt="" />
+                    <div className="flex-align flex-between">
+                        <div className="text-center">
+                            <h4 className="text-white mb-8">
+                                We Delivery on Next Day from 10:00 AM to 08:00 PM
+                            </h4>
+                            <p className="text-white">For Orders starts from $100</p>
                         </div>
                     </div>
                 </div>

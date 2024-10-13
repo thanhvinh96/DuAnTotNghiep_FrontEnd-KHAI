@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 const FooterOne = () => {
     return (
-        <footer className="footer py-120">
+        <footer className="card footer py-120 border border-black-100 mt-2">
             <img
                 src="assets/images/bg/body-bottom-bg.png"
                 alt="BG"
@@ -19,14 +19,14 @@ const FooterOne = () => {
                             </Link>
                         </div>
                         <p className="mb-24">
-                            We're Grocery Shop, an innovative team of food supliers.
+                            We're Grocery Shop, a team of food supliers.
                         </p>
                         <div className="flex-align gap-16 mb-16">
                             <span className="w-32 h-32 flex-center rounded-circle bg-main-600 text-white text-md flex-shrink-0">
                                 <i className="ph-fill ph-map-pin" />
                             </span>
                             <span className="text-md text-gray-900 ">
-                                789 Inner Lane, Biyes park, California, USA
+                                Công viên phần mầm quang trung - Quận 12 - Tp.HCM
                             </span>
                         </div>
                         <div className="flex-align gap-16 mb-16">
@@ -38,14 +38,14 @@ const FooterOne = () => {
                                     to="/tel:+00123456789"
                                     className="text-md text-gray-900 hover-text-main-600"
                                 >
-                                    +00 123 456 789
+                                    0346976564
                                 </Link>
                                 <span className="text-md text-main-600 ">or</span>
                                 <Link
                                     to="/tel:+00987654012"
                                     className="text-md text-gray-900 hover-text-main-600"
                                 >
-                                    +00 987 654 012
+                                    0879594661
                                 </Link>
                             </div>
                         </div>
@@ -57,7 +57,7 @@ const FooterOne = () => {
                                 to="/mailto:support24@marketpro.com"
                                 className="text-md text-gray-900 hover-text-main-600"
                             >
-                                support24@marketpro.com
+                                khaidmps34940@fpt.edu.vn
                             </Link>
                         </div>
                     </div>
@@ -162,11 +162,6 @@ const FooterOne = () => {
                                     Help Ticket
                                 </Link>
                             </li>
-                            <li className="">
-                                <Link to="/shop" className="text-gray-600 hover-text-main-600">
-                                    Wishlist
-                                </Link>
-                            </li>
                         </ul>
                     </div>
                     <div className="footer-item">
@@ -200,52 +195,6 @@ const FooterOne = () => {
                             <li className="">
                                 <Link to="/shop" className="text-gray-600 hover-text-main-600">
                                     Pantry Staples
-                                </Link>
-                            </li>
-                        </ul>
-                    </div>
-                    <div className="footer-item">
-                        <h6 className="">Shop on The Go</h6>
-                        <p className="mb-16">Marketpro App is available. Get it now</p>
-                        <div className="flex-align gap-8 my-32">
-                            <Link to="/https://www.apple.com/store" className="">
-                                <img src="assets/images/thumbs/store-img1.png" alt="" />
-                            </Link>
-                            <Link to="/https://play.google.com/store/apps?hl=en" className="">
-                                <img src="assets/images/thumbs/store-img2.png" alt="" />
-                            </Link>
-                        </div>
-                        <ul className="flex-align gap-16">
-                            <li>
-                                <Link
-                                    to="/https://www.facebook.com"
-                                    className="w-44 h-44 flex-center bg-main-100 text-main-600 text-xl rounded-circle hover-bg-main-600 hover-text-white"
-                                >
-                                    <i className="ph-fill ph-facebook-logo" />
-                                </Link>
-                            </li>
-                            <li>
-                                <Link
-                                    to="/https://www.twitter.com"
-                                    className="w-44 h-44 flex-center bg-main-100 text-main-600 text-xl rounded-circle hover-bg-main-600 hover-text-white"
-                                >
-                                    <i className="ph-fill ph-twitter-logo" />
-                                </Link>
-                            </li>
-                            <li>
-                                <Link
-                                    to="/https://www.linkedin.com"
-                                    className="w-44 h-44 flex-center bg-main-100 text-main-600 text-xl rounded-circle hover-bg-main-600 hover-text-white"
-                                >
-                                    <i className="ph-fill ph-instagram-logo" />
-                                </Link>
-                            </li>
-                            <li>
-                                <Link
-                                    to="/https://www.pinterest.com"
-                                    className="w-44 h-44 flex-center bg-main-100 text-main-600 text-xl rounded-circle hover-bg-main-600 hover-text-white"
-                                >
-                                    <i className="ph-fill ph-linkedin-logo" />
                                 </Link>
                             </li>
                         </ul>

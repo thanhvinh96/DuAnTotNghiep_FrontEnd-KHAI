@@ -132,7 +132,7 @@ function CategoryOverview() {
                 {showDatatable.map((category) => (
                   <Tab key={category.CategoryID} onClick={() => setSelectedCategory(category)}>
                     <img
-                      src={`http://localhost:3000/uploads/${category.ImageURL}`}
+                      src={category.ImageURL}
                       alt={category.CategoryName}
                       width="25px"
                       className="me-2"
@@ -169,7 +169,7 @@ function CategoryOverview() {
                             <Td>
                               <Badge colorScheme="blue">Sản phẩm: {selectedCategory.status}</Badge>
                             </Td>
-                            <Td><img src={`http://localhost:3000/uploads/${selectedCategory.ImageURL}`} width="40px" alt={selectedCategory.CategoryName} /></Td>
+                            <Td><img src={selectedCategory.ImageURL} width="40px" alt={selectedCategory.CategoryName} /></Td>
                             <Td>
                               <select
                                 className="form-control"
