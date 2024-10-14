@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react'
 
 import Preloader from "../helper/Preloader";
-import HeaderTwo from "../components/HeaderTwo";
 import Breadcrumb from "../components/Breadcrumb";
 import ShopSection from "../components/ShopSection";
 import ShippingTwo from "../components/ShippingTwo";
@@ -12,6 +11,7 @@ import { ProductController } from '../../controller/productController.tsx';
 import { CategoryController } from '../../controller/categoryController.tsx';
 import { Link } from 'react-router-dom';
 import ReactSlider from 'react-slider';
+import HeaderOne from 'client/components/HeaderOne';
 
 const ShopPage = () => {
     const [dataProduct, setDataProduct] = useState([]);
@@ -100,7 +100,7 @@ const ShopPage = () => {
             <Preloader />
 
             {/* HeaderOne */}
-            <HeaderTwo category={true} />
+            <HeaderOne category={true} />
 
             {/* Breadcrumb */}
             <Breadcrumb title={"Shop"} />
