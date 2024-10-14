@@ -1,7 +1,5 @@
 import React from 'react'
 import Preloader from "../helper/Preloader";
-
-import HeaderTwo from "../components/HeaderTwo";
 import Breadcrumb from "../components/Breadcrumb";
 import FooterTwo from "../components/FooterTwo";
 import BottomFooter from "../components/BottomFooter";
@@ -9,35 +7,36 @@ import ShippingOne from "../components/ShippingOne";
 import Account from "../components/Login";
 import ScrollToTop from "react-scroll-to-top";
 import ColorInit from "../helper/ColorInit";
+import HeaderOne from 'client/components/HeaderOne';
 export default function Login() {
   return (
     <>
-          {/* ColorInit */}
-          <ColorInit color={true} />
+      {/* ColorInit */}
+      <ColorInit color={true} />
 
-{/* ScrollToTop */}
-<ScrollToTop smooth color="#FA6400" />
+      {/* ScrollToTop */}
+      <ScrollToTop smooth color="#FA6400" />
 
-{/* Preloader */}
-<Preloader />
+      {/* Preloader */}
+      <Preloader />
 
-{/* HeaderTwo */}
-<HeaderTwo category={true} />
+      {/* HeaderTwo */}
+      <HeaderOne category={true} />
 
-{/* Breadcrumb */}
-<Breadcrumb title={"Đăng Nhập Tài Khoản"} />
+      {/* Breadcrumb */}
+      <Breadcrumb title={"Đăng Nhập Tài Khoản"} />
 
-{/* Account */}
-<Account />
+      {/* Account */}
+      <Account />
 
-{/* ShippingOne */}
-<ShippingOne />
+      {/* ShippingOne */}
+      <ShippingOne />
 
-{/* FooterTwo */}
-<FooterTwo />
+      {/* FooterTwo */}
+      <FooterTwo />
 
-{/* BottomFooter */}
-<BottomFooter />
+      {/* BottomFooter */}
+      <BottomFooter />
     </>
-)
+  )
 }

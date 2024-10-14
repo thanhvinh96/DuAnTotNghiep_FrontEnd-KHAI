@@ -133,14 +133,14 @@ const FlashSalesOne = () => {
                                                 New
                                             </span>
                                             <Link
-                                                to="/product-details"
+                                                to={`/product-details?id=${item.ProductID}`}
                                                 className="product-card__thumb flex-center"
                                             >
                                                 <img src={item.OtherImages[0]} alt="" />
                                             </Link>
                                             <div className="product-card__content p-sm-2">
                                                 <h6 className="title text-lg fw-semibold mt-12 mb-8">
-                                                    <Link to="/product-details" className="link text-line-2">
+                                                    <Link to={`/product-details?id=${item.ProductID}`} className="link text-line-2">
                                                         {item.ProductName}
                                                     </Link>
                                                 </h6>
@@ -152,24 +152,35 @@ const FlashSalesOne = () => {
                                                         By FOOD STORE
                                                     </span>
                                                 </div>
-                                                <div className="product-card__content mt-12">
-                                                    <div className="product-card__price mb-8">
-                                                        <span className="text-heading text-md fw-semibold ">
-                                                            {formatCurrency(item.Price)}
-                                                        </span>
+                                                <div className="mt-8">
+                                                    <div
+                                                        className="progress w-100 bg-color-three rounded-pill h-4"
+                                                        role="progressbar"
+                                                        aria-label="Basic example"
+                                                        aria-valuenow={35}
+                                                        aria-valuemin={0}
+                                                        aria-valuemax={100}
+                                                    >
+                                                        <div
+                                                            className="progress-bar bg-tertiary-600 rounded-pill"
+                                                            style={{ width: "35%" }}
+                                                        />
                                                     </div>
-                                                    <div className="flex-align gap-6">
-                                                        <span className="text-xs fw-bold text-gray-600">4.8</span>
-                                                        <span className="text-15 fw-bold text-warning-600 d-flex">
-                                                            <i className="ph-fill ph-star" />
-                                                        </span>
-                                                        <span className="text-xs fw-bold text-gray-600">(17k)</span>
+                                                    <span className="text-gray-900 text-xs fw-medium mt-8">
+                                                        Số Lượng {item.StockQuantity}
+                                                    </span>
+                                                </div>
+                                                <div className="product-card__content mt-12">
+                                                    <div className="product-card__price my-20">
+                                                        <h6 className=" mb-0">{formatCurrency(item.Price)}/kg</h6>
                                                     </div>
                                                     <Link
-                                                        to="/cart"
-                                                        className="product-card__cart btn bg-main-50 text-main-600 hover-bg-main-600 hover-text-white py-11 px-24 rounded-pill flex-align gap-8 mt-24 w-100 justify-content-center"
+                                                        to={`/product-details?id=${item.ProductID}`}
+
                                                     >
-                                                        Add To Cart <i className="ph ph-shopping-cart" />
+                                                        <button className="product-card__cart btn bg-main-50 text-main-600 hover-bg-main-600 hover-text-white py-11 px-24 rounded-pill flex-align gap-8 mt-24 w-100 justify-content-center" >
+                                                            Xem chi tiết <i className="ph ph-shopping-cart" />
+                                                        </button>
                                                     </Link>
                                                 </div>
                                             </div>

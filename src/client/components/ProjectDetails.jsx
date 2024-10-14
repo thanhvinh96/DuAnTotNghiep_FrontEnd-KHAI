@@ -4,6 +4,7 @@ import Swal from 'sweetalert2'; // Nhập SweetAlert2
 import AddressInfo from './AddAdressProfile';
 import HistoryBuy from './HistoryBuy';
 import { useNavigate } from 'react-router-dom'; // Import useNavigate thay vì useHistory
+import { Link } from '@chakra-ui/react';
 
 // Dummy components for different pages
 const handleLogout = () => {
@@ -32,7 +33,9 @@ const ProfileInfo = () => {
   // Handle logout
   const handleLogout = () => {
     localStorage.removeItem('tokenUser');
-    window.location.reload(); // Hoặc chuyển hướng tới trang đăng nhập
+    // window.location.reload(); // Hoặc chuyển hướng tới trang đăng nhập
+    window.location.href = "/";
+
   };
 
   const getInfo = () => {
@@ -120,23 +123,25 @@ const ProfileInfo = () => {
             </div>
           </div>
         </div>
-      {/* Hiển thị thông báo lỗi nếu có */}
-{error && <div className="error-message">{error}</div>}
-{/* Nút điều hướng đến trang quản trị nếu là Admin */}
-{userData?.Role === 'Admin' && (
-  <div className="row mt-3">
-    <div className="col-lg-6">
-      <button className="btn btn-primary btn-block" onClick={handleAdminRedirect}>
-        Đi đến trang quản trị
-      </button>
-    </div>
-    <div className="col-lg-6">
-      <button className="btn btn-danger btn-block" onClick={handleLogout}>
-        Đăng xuất
-      </button>
-    </div>
-  </div>
-)}
+        {/* Hiển thị thông báo lỗi nếu có */}
+        {error && <div className="error-message">{error}</div>}
+        {/* Nút điều hướng đến trang quản trị nếu là Admin */}
+        {userData?.Role === 'Admin' && (
+          <div className="row mt-3">
+            <div className="col-lg-6">
+              <button className="btn btn-primary btn-block" onClick={handleAdminRedirect}>
+                Đi đến trang quản trị
+              </button>
+            </div>
+            <div className="col-lg-6">
+              <Link to='/'>
+                <button className="btn btn-danger btn-block" onClick={handleLogout}>
+                  Đăng xuất
+                </button>
+              </Link>
+            </div>
+          </div>
+        )}
 
       </div>
     </div>
@@ -186,7 +191,7 @@ const Profile = () => {
   // };
 
   useEffect(() => {
-  
+
   }, []);
 
   // Function to render the active component
@@ -244,7 +249,7 @@ const Profile = () => {
               </a>
             </div>
           </div>
-  
+
           {/* Main Content */}
           <div className="col-lg-9">
             <div className="profile-content">

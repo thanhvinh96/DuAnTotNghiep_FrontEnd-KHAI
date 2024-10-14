@@ -111,7 +111,7 @@ const CartPage = () => {
                         <th className="h6 mb-0 text-lg fw-bold" style={{ padding: '20px', color: 'white' }}>Tên Sản Phẩm</th>
                         <th className="h6 mb-0 text-lg fw-bold" style={{ padding: '20px', color: 'white' }}>Giá Sản Phẩm</th>
                         <th className="h6 mb-0 text-lg fw-bold" style={{ padding: '20px', color: 'white' }}>Số Lượng</th>
-                        <th className="h6 mb-0 text-lg fw-bold" style={{ padding: '20px', color: 'white' }}>Tổng Tiền</th>
+                        {/* <th className="h6 mb-0 text-lg fw-bold" style={{ padding: '20px', color: 'white' }}>Tổng Tiền</th> */}
                       </tr>
                     </thead>
                     <tbody>
@@ -135,7 +135,7 @@ const CartPage = () => {
                                 className="table-product__thumb border border-gray-100 rounded-8 flex-center"
                               >
                                 <img
-                                  src={`http://localhost:3000/uploads/${item.OtherImages[0] || 'default-image.png'}`}
+                                  src={item.OtherImages[0] || 'default-image.png'}  
                                   alt={item.ProductName}
                                 />
                               </Link>
@@ -149,32 +149,6 @@ const CartPage = () => {
                                     {item.ProductName}
                                   </Link>
                                 </h6>
-                                {/* <div className="flex-align gap-16 mb-16">
-                                  <div className="flex-align gap-6">
-                                    <span className="text-md fw-medium text-warning-600 d-flex">
-                                      <i className="ph-fill ph-star" />
-                                    </span>
-                                    <span className="text-md fw-semibold text-gray-900">
-                                      4.8
-                                    </span>
-                                  </div>
-                                  <span className="text-sm fw-medium text-gray-200">|</span>
-                                  <span className="text-neutral-600 text-sm">128 Reviews</span>
-                                </div> */}
-                                <div className="flex-align gap-16">
-                                  {/* <Link
-                                    to="/cart"
-                                    className="product-card__cart btn bg-gray-50 text-heading text-sm hover-bg-main-600 hover-text-white py-7 px-8 rounded-8 flex-center gap-8 fw-medium"
-                                  >
-                                    Camera
-                                  </Link>
-                                  <Link
-                                    to="/cart"
-                                    className="product-card__cart btn bg-gray-50 text-heading text-sm hover-bg-main-600 hover-text-white py-7 px-8 rounded-8 flex-center gap-8 fw-medium"
-                                  >
-                                    Videos
-                                  </Link> */}
-                                </div>
                               </div>
                             </div>
                           </td>
@@ -207,11 +181,11 @@ const CartPage = () => {
                               </button>
                             </div>
                           </td>
-                          <td style={{ padding: '20px' }}>
+                          {/* <td style={{ padding: '20px' }}>
                             <span className="text-lg h6 mb-0 fw-semibold">
                               {formatCurrency((item.Price * item.quantity))}
                             </span>
-                          </td>
+                          </td> */}
                         </tr>
                       ))}
 
